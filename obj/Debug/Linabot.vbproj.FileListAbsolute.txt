@@ -1,0 +1,17 @@
+C:\Users\Linaculer\source\repos\Linabot\Linabot\bin\Debug\Linabot.exe.config
+C:\Users\Linaculer\source\repos\Linabot\Linabot\bin\Debug\Linabot.exe
+C:\Users\Linaculer\source\repos\Linabot\Linabot\bin\Debug\Linabot.pdb
+C:\Users\Linaculer\source\repos\Linabot\Linabot\bin\Debug\Linabot.xml
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.Ajouter_Un_Compte.resources
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.Panel.resources
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.Resources.resources
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.vbproj.GenerateResource.cache
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.vbproj.CoreCompileInputs.cache
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.exe
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.xml
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.pdb
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.vbprojAssemblyReference.cache
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.Supprimer_un_compte.resources
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.Charger_Un_Compte.resources
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.Groupe.resources
+C:\Users\Linaculer\source\repos\Linabot\Linabot\obj\Debug\Linabot.Page_Initial.resources
