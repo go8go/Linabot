@@ -23,6 +23,7 @@ Partial Class Page_Initial
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Page_Initial))
         Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Initiative", "0", "0", "0", "0", "0"}, 21)
         Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Prospection", "0", "0", "0", "0", "0"}, 22)
         Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Points d'action (PA)", "0", "0", "0", "0", "0"}, 6)
@@ -67,21 +68,30 @@ Partial Class Page_Initial
         Dim ListViewItem42 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Résistance feu (% - PVM)", "0", "0", "0", "0", "0"}, 11)
         Dim ListViewItem43 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Résistance feu (Fixe - PVP)", "0", "0", "0", "0", "0"}, 17)
         Dim ListViewItem44 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Résistance feu (% - PVP)", "0", "0", "0", "0", "0"}, 17)
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Page_Initial))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage_Tchat = New System.Windows.Forms.TabPage()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.Label_Abonnement_Dofus = New Linabot.RedemptionLabel()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.RedemptionLabel2 = New Linabot.RedemptionLabel()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Label_Kamas = New Linabot.RedemptionLabel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.ProgressBar_Vitalité = New Linabot.RedemptionProgressBar()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.ProgressBar_Energie = New Linabot.RedemptionProgressBar()
         Me.ProgressBar_Pods = New Linabot.RedemptionProgressBar()
         Me.ProgressBar_Expérience = New Linabot.RedemptionProgressBar()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label_Niveau = New Linabot.RedemptionLabel()
         Me.Label_Statut = New Linabot.RedemptionLabel()
         Me.Toggle_Connexion = New Linabot.RedemptionToggle()
+        Me.Button_Option_Tchat = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.CheckBox_Canal_Groupe_2 = New Linabot.RedemptionCheckBox()
         Me.CheckBox_Canal_Communs_1 = New Linabot.RedemptionCheckBox()
         Me.CheckBox_Canal_Commerce_6 = New Linabot.RedemptionCheckBox()
@@ -90,8 +100,12 @@ Partial Class Page_Initial
         Me.CheckBox_Canal_Guilde_3 = New Linabot.RedemptionCheckBox()
         Me.CheckBox_Canal_Information_0 = New Linabot.RedemptionCheckBox()
         Me.RedemptionTextBox1 = New Linabot.RedemptionTextBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.RichTextBox_Tchat = New System.Windows.Forms.RichTextBox()
         Me.TabPage_Caractéristique = New System.Windows.Forms.TabPage()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Label_Caractéristique_Capital = New Linabot.RedemptionLabel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ListView_Caractéristique = New System.Windows.Forms.ListView()
@@ -104,43 +118,10 @@ Partial Class Page_Initial
         Me.ImageList_Caractéristique = New System.Windows.Forms.ImageList(Me.components)
         Me.TabPage_Sort = New System.Windows.Forms.TabPage()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.Label_Sort_Capital = New Linabot.RedemptionLabel()
         Me.TabPage_Inventaire = New System.Windows.Forms.TabPage()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.TabControl2 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.ListView_Inventaire_Affiche_Caractéristique = New System.Windows.Forms.ListView()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Label_Inventaire_Affiche_Level = New Linabot.RedemptionLabel()
-        Me.Label_Inventaire_Affiche_Nom = New Linabot.RedemptionLabel()
-        Me.FlowLayoutPanel_Inventaire = New System.Windows.Forms.FlowLayoutPanel()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.TabPage8 = New System.Windows.Forms.TabPage()
-        Me.TabPage9 = New System.Windows.Forms.TabPage()
-        Me.TabPage10 = New System.Windows.Forms.TabPage()
-        Me.TabPage11 = New System.Windows.Forms.TabPage()
-        Me.TabPage12 = New System.Windows.Forms.TabPage()
-        Me.TabPage13 = New System.Windows.Forms.TabPage()
-        Me.RichTextBox_Socket = New System.Windows.Forms.RichTextBox()
-        Me.ImageList_Initial = New System.Windows.Forms.ImageList(Me.components)
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Button_Option_Tchat = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Button_Inventaire_Supprimer = New System.Windows.Forms.Button()
         Me.PictureBox_Dofus_5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox_Dofus_6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox_Dofus_3 = New System.Windows.Forms.PictureBox()
@@ -158,21 +139,30 @@ Partial Class Page_Initial
         Me.PictureBox_Bouclier = New System.Windows.Forms.PictureBox()
         Me.PictureBox_Amulette = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.TabControl2 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.ListView_Inventaire_Affiche_Caractéristique = New System.Windows.Forms.ListView()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label_Inventaire_Affiche_Level = New Linabot.RedemptionLabel()
+        Me.Label_Inventaire_Affiche_Nom = New Linabot.RedemptionLabel()
         Me.PictureBox_Inventaire_Affiche_Caractéristique = New System.Windows.Forms.PictureBox()
-        Me.Button_Inventaire_Supprimer = New System.Windows.Forms.Button()
+        Me.FlowLayoutPanel_Inventaire = New System.Windows.Forms.FlowLayoutPanel()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
+        Me.TabPage9 = New System.Windows.Forms.TabPage()
+        Me.TabPage10 = New System.Windows.Forms.TabPage()
+        Me.TabPage11 = New System.Windows.Forms.TabPage()
+        Me.TabPage12 = New System.Windows.Forms.TabPage()
+        Me.TabPage13 = New System.Windows.Forms.TabPage()
+        Me.RichTextBox_Socket = New System.Windows.Forms.RichTextBox()
+        Me.ImageList_Initial = New System.Windows.Forms.ImageList(Me.components)
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TabControl1.SuspendLayout()
         Me.TabPage_Tchat.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.TabPage_Caractéristique.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.TabPage_Sort.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.TabPage_Inventaire.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.TabControl2.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        Me.TabPage13.SuspendLayout()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -181,11 +171,17 @@ Partial Class Page_Initial
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage_Caractéristique.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.TabPage_Sort.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage_Inventaire.SuspendLayout()
         CType(Me.PictureBox_Dofus_5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_Dofus_6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_Dofus_3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -203,7 +199,11 @@ Partial Class Page_Initial
         CType(Me.PictureBox_Bouclier, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_Amulette, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
+        Me.TabControl2.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox_Inventaire_Affiche_Caractéristique, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage13.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -270,6 +270,16 @@ Partial Class Page_Initial
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Information"
         '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = Global.Linabot.My.Resources.Resources.Logo_Dofus
+        Me.PictureBox12.Location = New System.Drawing.Point(6, 130)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(60, 31)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox12.TabIndex = 23
+        Me.PictureBox12.TabStop = False
+        '
         'Label_Abonnement_Dofus
         '
         Me.Label_Abonnement_Dofus.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
@@ -280,6 +290,16 @@ Partial Class Page_Initial
         Me.Label_Abonnement_Dofus.Size = New System.Drawing.Size(246, 31)
         Me.Label_Abonnement_Dofus.TabIndex = 22
         Me.Label_Abonnement_Dofus.Text = "Abonné jusqu'au : "
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.Linabot.My.Resources.Resources.Muscles_icon
+        Me.PictureBox11.Location = New System.Drawing.Point(6, 191)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(60, 23)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 21
+        Me.PictureBox11.TabStop = False
         '
         'RedemptionLabel2
         '
@@ -292,6 +312,16 @@ Partial Class Page_Initial
         Me.RedemptionLabel2.TabIndex = 20
         Me.RedemptionLabel2.Text = "Niveaux : 0"
         '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.Linabot.My.Resources.Resources._652
+        Me.PictureBox10.Location = New System.Drawing.Point(6, 93)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(60, 31)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox10.TabIndex = 19
+        Me.PictureBox10.TabStop = False
+        '
         'Label_Kamas
         '
         Me.Label_Kamas.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
@@ -303,6 +333,36 @@ Partial Class Page_Initial
         Me.Label_Kamas.TabIndex = 18
         Me.Label_Kamas.Text = "Kamas : 0"
         '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Location = New System.Drawing.Point(324, 130)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(39, 31)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox9.TabIndex = 17
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.Linabot.My.Resources.Resources._1292
+        Me.PictureBox8.Location = New System.Drawing.Point(324, 93)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(39, 31)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 16
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.Linabot.My.Resources.Resources.téléchargement
+        Me.PictureBox7.Location = New System.Drawing.Point(324, 56)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(39, 31)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 15
+        Me.PictureBox7.TabStop = False
+        '
         'ProgressBar_Vitalité
         '
         Me.ProgressBar_Vitalité.BackColor = System.Drawing.Color.Transparent
@@ -313,6 +373,16 @@ Partial Class Page_Initial
         Me.ProgressBar_Vitalité.TabIndex = 10
         Me.ProgressBar_Vitalité.Text = "RedemptionProgressBar1"
         Me.ProgressBar_Vitalité.Value = 0
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.Linabot.My.Resources.Resources._7__2_
+        Me.PictureBox6.Location = New System.Drawing.Point(324, 19)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(39, 31)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 14
+        Me.PictureBox6.TabStop = False
         '
         'ProgressBar_Energie
         '
@@ -347,6 +417,16 @@ Partial Class Page_Initial
         Me.ProgressBar_Expérience.Text = "RedemptionProgressBar2"
         Me.ProgressBar_Expérience.Value = 0
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.Linabot.My.Resources.Resources.Muscles_icon
+        Me.PictureBox5.Location = New System.Drawing.Point(6, 56)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(60, 31)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 9
+        Me.PictureBox5.TabStop = False
+        '
         'Label_Niveau
         '
         Me.Label_Niveau.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
@@ -380,6 +460,19 @@ Partial Class Page_Initial
         Me.Toggle_Connexion.TabIndex = 6
         Me.Toggle_Connexion.Text = "RedemptionToggle1"
         '
+        'Button_Option_Tchat
+        '
+        Me.Button_Option_Tchat.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.Button_Option_Tchat.BackgroundImage = Global.Linabot.My.Resources.Resources._Option
+        Me.Button_Option_Tchat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button_Option_Tchat.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button_Option_Tchat.ImageIndex = 1
+        Me.Button_Option_Tchat.Location = New System.Drawing.Point(686, 587)
+        Me.Button_Option_Tchat.Name = "Button_Option_Tchat"
+        Me.Button_Option_Tchat.Size = New System.Drawing.Size(47, 39)
+        Me.Button_Option_Tchat.TabIndex = 5
+        Me.Button_Option_Tchat.UseVisualStyleBackColor = False
+        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -400,6 +493,17 @@ Partial Class Page_Initial
         Me.GroupBox1.Size = New System.Drawing.Size(674, 620)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.Linabot.My.Resources.Resources.moins
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Location = New System.Drawing.Point(643, 586)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(25, 28)
+        Me.Button1.TabIndex = 5
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'CheckBox_Canal_Groupe_2
         '
@@ -493,6 +597,36 @@ Partial Class Page_Initial
         Me.RedemptionTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.RedemptionTextBox1.UseSystemPasswordChar = False
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(6, 557)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(23, 23)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 3
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(35, 557)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(23, 23)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 3
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(6, 586)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(36, 28)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 3
+        Me.PictureBox4.TabStop = False
+        '
         'RichTextBox_Tchat
         '
         Me.RichTextBox_Tchat.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -516,6 +650,16 @@ Partial Class Page_Initial
         Me.TabPage_Caractéristique.Size = New System.Drawing.Size(1322, 632)
         Me.TabPage_Caractéristique.TabIndex = 1
         Me.TabPage_Caractéristique.Text = "Caractéristique"
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = Global.Linabot.My.Resources.Resources.Muscles_icon
+        Me.PictureBox13.Location = New System.Drawing.Point(438, 9)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(60, 23)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox13.TabIndex = 340
+        Me.PictureBox13.TabStop = False
         '
         'Label_Caractéristique_Capital
         '
@@ -642,8 +786,8 @@ Partial Class Page_Initial
         Me.ImageList_Caractéristique.Images.SetKeyName(8, "PM.png")
         Me.ImageList_Caractéristique.Images.SetKeyName(9, "1157.png")
         Me.ImageList_Caractéristique.Images.SetKeyName(10, "1159.png")
-        Me.ImageList_Caractéristique.Images.SetKeyName(11, "1161.png")
-        Me.ImageList_Caractéristique.Images.SetKeyName(12, "1163.png")
+        Me.ImageList_Caractéristique.Images.SetKeyName(11, "Rés pk1161.png")
+        Me.ImageList_Caractéristique.Images.SetKeyName(12, "%1163.png")
         Me.ImageList_Caractéristique.Images.SetKeyName(13, "1165.png")
         Me.ImageList_Caractéristique.Images.SetKeyName(14, "1582.png")
         Me.ImageList_Caractéristique.Images.SetKeyName(15, "2172.png")
@@ -679,6 +823,16 @@ Partial Class Page_Initial
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1316, 626)
         Me.Panel2.TabIndex = 0
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = Global.Linabot.My.Resources.Resources.Muscles_icon
+        Me.PictureBox14.Location = New System.Drawing.Point(12, 3)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(60, 23)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox14.TabIndex = 342
+        Me.PictureBox14.TabStop = False
         '
         'Label_Sort_Capital
         '
@@ -722,365 +876,18 @@ Partial Class Page_Initial
         Me.TabPage_Inventaire.TabIndex = 3
         Me.TabPage_Inventaire.Text = "Inventaire"
         '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.TabControl2)
-        Me.GroupBox3.Controls.Add(Me.Label_Inventaire_Affiche_Level)
-        Me.GroupBox3.Controls.Add(Me.Label_Inventaire_Affiche_Nom)
-        Me.GroupBox3.Controls.Add(Me.PictureBox_Inventaire_Affiche_Caractéristique)
-        Me.GroupBox3.ForeColor = System.Drawing.Color.White
-        Me.GroupBox3.Location = New System.Drawing.Point(442, 6)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(524, 408)
-        Me.GroupBox3.TabIndex = 1
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Affiche Item"
-        '
-        'TabControl2
-        '
-        Me.TabControl2.Controls.Add(Me.TabPage1)
-        Me.TabControl2.Controls.Add(Me.TabPage2)
-        Me.TabControl2.Location = New System.Drawing.Point(160, 48)
-        Me.TabControl2.Name = "TabControl2"
-        Me.TabControl2.SelectedIndex = 0
-        Me.TabControl2.Size = New System.Drawing.Size(348, 354)
-        Me.TabControl2.TabIndex = 342
-        '
-        'TabPage1
-        '
-        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage1.Controls.Add(Me.ListView_Inventaire_Affiche_Caractéristique)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(340, 328)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Effets"
-        '
-        'ListView_Inventaire_Affiche_Caractéristique
-        '
-        Me.ListView_Inventaire_Affiche_Caractéristique.BackColor = System.Drawing.Color.Silver
-        Me.ListView_Inventaire_Affiche_Caractéristique.FullRowSelect = True
-        Me.ListView_Inventaire_Affiche_Caractéristique.GridLines = True
-        Me.ListView_Inventaire_Affiche_Caractéristique.Location = New System.Drawing.Point(6, 6)
-        Me.ListView_Inventaire_Affiche_Caractéristique.Name = "ListView_Inventaire_Affiche_Caractéristique"
-        Me.ListView_Inventaire_Affiche_Caractéristique.Size = New System.Drawing.Size(328, 316)
-        Me.ListView_Inventaire_Affiche_Caractéristique.SmallImageList = Me.ImageList_Caractéristique
-        Me.ListView_Inventaire_Affiche_Caractéristique.TabIndex = 0
-        Me.ListView_Inventaire_Affiche_Caractéristique.UseCompatibleStateImageBehavior = False
-        Me.ListView_Inventaire_Affiche_Caractéristique.View = System.Windows.Forms.View.List
-        '
-        'TabPage2
-        '
-        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(340, 328)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Conditions"
-        '
-        'Label_Inventaire_Affiche_Level
-        '
-        Me.Label_Inventaire_Affiche_Level.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Label_Inventaire_Affiche_Level.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Label_Inventaire_Affiche_Level.ForeColor = System.Drawing.Color.White
-        Me.Label_Inventaire_Affiche_Level.Location = New System.Drawing.Point(444, 19)
-        Me.Label_Inventaire_Affiche_Level.Name = "Label_Inventaire_Affiche_Level"
-        Me.Label_Inventaire_Affiche_Level.Size = New System.Drawing.Size(64, 23)
-        Me.Label_Inventaire_Affiche_Level.TabIndex = 341
-        Me.Label_Inventaire_Affiche_Level.Text = "Niv.0"
-        '
-        'Label_Inventaire_Affiche_Nom
-        '
-        Me.Label_Inventaire_Affiche_Nom.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Label_Inventaire_Affiche_Nom.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Label_Inventaire_Affiche_Nom.ForeColor = System.Drawing.Color.White
-        Me.Label_Inventaire_Affiche_Nom.Location = New System.Drawing.Point(16, 19)
-        Me.Label_Inventaire_Affiche_Nom.Name = "Label_Inventaire_Affiche_Nom"
-        Me.Label_Inventaire_Affiche_Nom.Size = New System.Drawing.Size(422, 23)
-        Me.Label_Inventaire_Affiche_Nom.TabIndex = 340
-        Me.Label_Inventaire_Affiche_Nom.Text = "Nom de l'item"
-        '
-        'FlowLayoutPanel_Inventaire
-        '
-        Me.FlowLayoutPanel_Inventaire.AutoScroll = True
-        Me.FlowLayoutPanel_Inventaire.BackColor = System.Drawing.Color.Silver
-        Me.FlowLayoutPanel_Inventaire.Location = New System.Drawing.Point(972, 6)
-        Me.FlowLayoutPanel_Inventaire.Name = "FlowLayoutPanel_Inventaire"
-        Me.FlowLayoutPanel_Inventaire.Size = New System.Drawing.Size(344, 557)
-        Me.FlowLayoutPanel_Inventaire.TabIndex = 0
-        '
-        'TabPage5
-        '
-        Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage5.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "TabPage5"
-        '
-        'TabPage6
-        '
-        Me.TabPage6.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage6.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage6.TabIndex = 5
-        Me.TabPage6.Text = "TabPage6"
-        '
-        'TabPage7
-        '
-        Me.TabPage7.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage7.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage7.TabIndex = 6
-        Me.TabPage7.Text = "TabPage7"
-        '
-        'TabPage8
-        '
-        Me.TabPage8.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage8.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage8.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage8.TabIndex = 7
-        Me.TabPage8.Text = "TabPage8"
-        '
-        'TabPage9
-        '
-        Me.TabPage9.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage9.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage9.Name = "TabPage9"
-        Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage9.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage9.TabIndex = 8
-        Me.TabPage9.Text = "TabPage9"
-        '
-        'TabPage10
-        '
-        Me.TabPage10.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage10.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage10.Name = "TabPage10"
-        Me.TabPage10.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage10.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage10.TabIndex = 9
-        Me.TabPage10.Text = "TabPage10"
-        '
-        'TabPage11
-        '
-        Me.TabPage11.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage11.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage11.Name = "TabPage11"
-        Me.TabPage11.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage11.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage11.TabIndex = 10
-        Me.TabPage11.Text = "TabPage11"
-        '
-        'TabPage12
-        '
-        Me.TabPage12.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage12.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage12.Name = "TabPage12"
-        Me.TabPage12.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage12.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage12.TabIndex = 11
-        Me.TabPage12.Text = "TabPage12"
-        '
-        'TabPage13
-        '
-        Me.TabPage13.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.TabPage13.Controls.Add(Me.RichTextBox_Socket)
-        Me.TabPage13.Location = New System.Drawing.Point(4, 47)
-        Me.TabPage13.Name = "TabPage13"
-        Me.TabPage13.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage13.Size = New System.Drawing.Size(1322, 632)
-        Me.TabPage13.TabIndex = 12
-        Me.TabPage13.Text = "TabPage13"
-        '
-        'RichTextBox_Socket
-        '
-        Me.RichTextBox_Socket.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.RichTextBox_Socket.Location = New System.Drawing.Point(6, 6)
-        Me.RichTextBox_Socket.Name = "RichTextBox_Socket"
-        Me.RichTextBox_Socket.Size = New System.Drawing.Size(662, 532)
-        Me.RichTextBox_Socket.TabIndex = 2
-        Me.RichTextBox_Socket.Text = ""
-        '
-        'ImageList_Initial
-        '
-        Me.ImageList_Initial.ImageStream = CType(resources.GetObject("ImageList_Initial.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ImageList_Initial.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageList_Initial.Images.SetKeyName(0, "848.png")
-        Me.ImageList_Initial.Images.SetKeyName(1, "1292.png")
-        Me.ImageList_Initial.Images.SetKeyName(2, "1294.png")
-        Me.ImageList_Initial.Images.SetKeyName(3, "1296.png")
-        Me.ImageList_Initial.Images.SetKeyName(4, "2200.png")
-        Me.ImageList_Initial.Images.SetKeyName(5, "580b585b2edbce24c47b23eb.png")
-        '
-        'ToolTip1
-        '
-        Me.ToolTip1.AutoPopDelay = 60000
-        Me.ToolTip1.InitialDelay = 1
-        Me.ToolTip1.ReshowDelay = 100
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Image = Global.Linabot.My.Resources.Resources.Logo_Dofus
-        Me.PictureBox12.Location = New System.Drawing.Point(6, 130)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(60, 31)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox12.TabIndex = 23
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = Global.Linabot.My.Resources.Resources.Muscles_icon
-        Me.PictureBox11.Location = New System.Drawing.Point(6, 191)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(60, 23)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox11.TabIndex = 21
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.Linabot.My.Resources.Resources._652
-        Me.PictureBox10.Location = New System.Drawing.Point(6, 93)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(60, 31)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox10.TabIndex = 19
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(324, 130)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(39, 31)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox9.TabIndex = 17
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.Linabot.My.Resources.Resources._1292
-        Me.PictureBox8.Location = New System.Drawing.Point(324, 93)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(39, 31)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 16
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.Linabot.My.Resources.Resources.téléchargement
-        Me.PictureBox7.Location = New System.Drawing.Point(324, 56)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(39, 31)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox7.TabIndex = 15
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.Linabot.My.Resources.Resources._7__2_
-        Me.PictureBox6.Location = New System.Drawing.Point(324, 19)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(39, 31)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 14
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.Linabot.My.Resources.Resources.Muscles_icon
-        Me.PictureBox5.Location = New System.Drawing.Point(6, 56)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(60, 31)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 9
-        Me.PictureBox5.TabStop = False
-        '
-        'Button_Option_Tchat
-        '
-        Me.Button_Option_Tchat.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.Button_Option_Tchat.BackgroundImage = Global.Linabot.My.Resources.Resources._Option
-        Me.Button_Option_Tchat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button_Option_Tchat.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button_Option_Tchat.ImageIndex = 1
-        Me.Button_Option_Tchat.Location = New System.Drawing.Point(686, 587)
-        Me.Button_Option_Tchat.Name = "Button_Option_Tchat"
-        Me.Button_Option_Tchat.Size = New System.Drawing.Size(47, 39)
-        Me.Button_Option_Tchat.TabIndex = 5
-        Me.Button_Option_Tchat.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImage = Global.Linabot.My.Resources.Resources.moins
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Location = New System.Drawing.Point(643, 586)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(25, 28)
-        Me.Button1.TabIndex = 5
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(6, 557)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(23, 23)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 3
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(35, 557)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(23, 23)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 3
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(6, 586)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(36, 28)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Image = Global.Linabot.My.Resources.Resources.Muscles_icon
-        Me.PictureBox13.Location = New System.Drawing.Point(438, 9)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(60, 23)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox13.TabIndex = 340
-        Me.PictureBox13.TabStop = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Image = Global.Linabot.My.Resources.Resources.Muscles_icon
-        Me.PictureBox14.Location = New System.Drawing.Point(12, 3)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(60, 23)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox14.TabIndex = 342
-        Me.PictureBox14.TabStop = False
+        'Button_Inventaire_Supprimer
+        '
+        Me.Button_Inventaire_Supprimer.BackgroundImage = Global.Linabot.My.Resources.Resources.Poubelle
+        Me.Button_Inventaire_Supprimer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button_Inventaire_Supprimer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button_Inventaire_Supprimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Inventaire_Supprimer.ForeColor = System.Drawing.Color.White
+        Me.Button_Inventaire_Supprimer.Location = New System.Drawing.Point(1263, 569)
+        Me.Button_Inventaire_Supprimer.Name = "Button_Inventaire_Supprimer"
+        Me.Button_Inventaire_Supprimer.Size = New System.Drawing.Size(53, 57)
+        Me.Button_Inventaire_Supprimer.TabIndex = 355
+        Me.Button_Inventaire_Supprimer.UseVisualStyleBackColor = True
         '
         'PictureBox_Dofus_5
         '
@@ -1252,6 +1059,86 @@ Partial Class Page_Initial
         Me.PictureBox1.TabIndex = 337
         Me.PictureBox1.TabStop = False
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.TabControl2)
+        Me.GroupBox3.Controls.Add(Me.Label_Inventaire_Affiche_Level)
+        Me.GroupBox3.Controls.Add(Me.Label_Inventaire_Affiche_Nom)
+        Me.GroupBox3.Controls.Add(Me.PictureBox_Inventaire_Affiche_Caractéristique)
+        Me.GroupBox3.ForeColor = System.Drawing.Color.White
+        Me.GroupBox3.Location = New System.Drawing.Point(442, 6)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(524, 408)
+        Me.GroupBox3.TabIndex = 1
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Affiche Item"
+        '
+        'TabControl2
+        '
+        Me.TabControl2.Controls.Add(Me.TabPage1)
+        Me.TabControl2.Controls.Add(Me.TabPage2)
+        Me.TabControl2.Location = New System.Drawing.Point(160, 48)
+        Me.TabControl2.Name = "TabControl2"
+        Me.TabControl2.SelectedIndex = 0
+        Me.TabControl2.Size = New System.Drawing.Size(348, 354)
+        Me.TabControl2.TabIndex = 342
+        '
+        'TabPage1
+        '
+        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.ListView_Inventaire_Affiche_Caractéristique)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(340, 328)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Effets"
+        '
+        'ListView_Inventaire_Affiche_Caractéristique
+        '
+        Me.ListView_Inventaire_Affiche_Caractéristique.BackColor = System.Drawing.Color.Silver
+        Me.ListView_Inventaire_Affiche_Caractéristique.FullRowSelect = True
+        Me.ListView_Inventaire_Affiche_Caractéristique.GridLines = True
+        Me.ListView_Inventaire_Affiche_Caractéristique.Location = New System.Drawing.Point(6, 6)
+        Me.ListView_Inventaire_Affiche_Caractéristique.Name = "ListView_Inventaire_Affiche_Caractéristique"
+        Me.ListView_Inventaire_Affiche_Caractéristique.Size = New System.Drawing.Size(328, 316)
+        Me.ListView_Inventaire_Affiche_Caractéristique.SmallImageList = Me.ImageList_Caractéristique
+        Me.ListView_Inventaire_Affiche_Caractéristique.TabIndex = 0
+        Me.ListView_Inventaire_Affiche_Caractéristique.UseCompatibleStateImageBehavior = False
+        Me.ListView_Inventaire_Affiche_Caractéristique.View = System.Windows.Forms.View.List
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(340, 328)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Conditions"
+        '
+        'Label_Inventaire_Affiche_Level
+        '
+        Me.Label_Inventaire_Affiche_Level.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Label_Inventaire_Affiche_Level.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Label_Inventaire_Affiche_Level.ForeColor = System.Drawing.Color.White
+        Me.Label_Inventaire_Affiche_Level.Location = New System.Drawing.Point(444, 19)
+        Me.Label_Inventaire_Affiche_Level.Name = "Label_Inventaire_Affiche_Level"
+        Me.Label_Inventaire_Affiche_Level.Size = New System.Drawing.Size(64, 23)
+        Me.Label_Inventaire_Affiche_Level.TabIndex = 341
+        Me.Label_Inventaire_Affiche_Level.Text = "Niv.0"
+        '
+        'Label_Inventaire_Affiche_Nom
+        '
+        Me.Label_Inventaire_Affiche_Nom.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Label_Inventaire_Affiche_Nom.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Label_Inventaire_Affiche_Nom.ForeColor = System.Drawing.Color.White
+        Me.Label_Inventaire_Affiche_Nom.Location = New System.Drawing.Point(16, 19)
+        Me.Label_Inventaire_Affiche_Nom.Name = "Label_Inventaire_Affiche_Nom"
+        Me.Label_Inventaire_Affiche_Nom.Size = New System.Drawing.Size(422, 23)
+        Me.Label_Inventaire_Affiche_Nom.TabIndex = 340
+        Me.Label_Inventaire_Affiche_Nom.Text = "Nom de l'item"
+        '
         'PictureBox_Inventaire_Affiche_Caractéristique
         '
         Me.PictureBox_Inventaire_Affiche_Caractéristique.Image = CType(resources.GetObject("PictureBox_Inventaire_Affiche_Caractéristique.Image"), System.Drawing.Image)
@@ -1262,18 +1149,131 @@ Partial Class Page_Initial
         Me.PictureBox_Inventaire_Affiche_Caractéristique.TabIndex = 339
         Me.PictureBox_Inventaire_Affiche_Caractéristique.TabStop = False
         '
-        'Button_Inventaire_Supprimer
+        'FlowLayoutPanel_Inventaire
         '
-        Me.Button_Inventaire_Supprimer.BackgroundImage = Global.Linabot.My.Resources.Resources.Poubelle
-        Me.Button_Inventaire_Supprimer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button_Inventaire_Supprimer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button_Inventaire_Supprimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_Inventaire_Supprimer.ForeColor = System.Drawing.Color.White
-        Me.Button_Inventaire_Supprimer.Location = New System.Drawing.Point(1263, 569)
-        Me.Button_Inventaire_Supprimer.Name = "Button_Inventaire_Supprimer"
-        Me.Button_Inventaire_Supprimer.Size = New System.Drawing.Size(53, 57)
-        Me.Button_Inventaire_Supprimer.TabIndex = 355
-        Me.Button_Inventaire_Supprimer.UseVisualStyleBackColor = True
+        Me.FlowLayoutPanel_Inventaire.AutoScroll = True
+        Me.FlowLayoutPanel_Inventaire.BackColor = System.Drawing.Color.Silver
+        Me.FlowLayoutPanel_Inventaire.Location = New System.Drawing.Point(972, 6)
+        Me.FlowLayoutPanel_Inventaire.Name = "FlowLayoutPanel_Inventaire"
+        Me.FlowLayoutPanel_Inventaire.Size = New System.Drawing.Size(344, 557)
+        Me.FlowLayoutPanel_Inventaire.TabIndex = 0
+        '
+        'TabPage5
+        '
+        Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage5.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage5.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "TabPage5"
+        '
+        'TabPage6
+        '
+        Me.TabPage6.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage6.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage6.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage6.TabIndex = 5
+        Me.TabPage6.Text = "TabPage6"
+        '
+        'TabPage7
+        '
+        Me.TabPage7.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage7.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage7.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage7.TabIndex = 6
+        Me.TabPage7.Text = "TabPage7"
+        '
+        'TabPage8
+        '
+        Me.TabPage8.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage8.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage8.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage8.TabIndex = 7
+        Me.TabPage8.Text = "TabPage8"
+        '
+        'TabPage9
+        '
+        Me.TabPage9.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage9.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage9.Name = "TabPage9"
+        Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage9.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage9.TabIndex = 8
+        Me.TabPage9.Text = "TabPage9"
+        '
+        'TabPage10
+        '
+        Me.TabPage10.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage10.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage10.Name = "TabPage10"
+        Me.TabPage10.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage10.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage10.TabIndex = 9
+        Me.TabPage10.Text = "TabPage10"
+        '
+        'TabPage11
+        '
+        Me.TabPage11.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage11.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage11.Name = "TabPage11"
+        Me.TabPage11.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage11.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage11.TabIndex = 10
+        Me.TabPage11.Text = "TabPage11"
+        '
+        'TabPage12
+        '
+        Me.TabPage12.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage12.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage12.Name = "TabPage12"
+        Me.TabPage12.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage12.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage12.TabIndex = 11
+        Me.TabPage12.Text = "TabPage12"
+        '
+        'TabPage13
+        '
+        Me.TabPage13.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.TabPage13.Controls.Add(Me.RichTextBox_Socket)
+        Me.TabPage13.Location = New System.Drawing.Point(4, 47)
+        Me.TabPage13.Name = "TabPage13"
+        Me.TabPage13.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage13.Size = New System.Drawing.Size(1322, 632)
+        Me.TabPage13.TabIndex = 12
+        Me.TabPage13.Text = "TabPage13"
+        '
+        'RichTextBox_Socket
+        '
+        Me.RichTextBox_Socket.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RichTextBox_Socket.Location = New System.Drawing.Point(6, 6)
+        Me.RichTextBox_Socket.Name = "RichTextBox_Socket"
+        Me.RichTextBox_Socket.Size = New System.Drawing.Size(662, 532)
+        Me.RichTextBox_Socket.TabIndex = 2
+        Me.RichTextBox_Socket.Text = ""
+        '
+        'ImageList_Initial
+        '
+        Me.ImageList_Initial.ImageStream = CType(resources.GetObject("ImageList_Initial.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList_Initial.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList_Initial.Images.SetKeyName(0, "848.png")
+        Me.ImageList_Initial.Images.SetKeyName(1, "1292.png")
+        Me.ImageList_Initial.Images.SetKeyName(2, "1294.png")
+        Me.ImageList_Initial.Images.SetKeyName(3, "1296.png")
+        Me.ImageList_Initial.Images.SetKeyName(4, "2200.png")
+        Me.ImageList_Initial.Images.SetKeyName(5, "580b585b2edbce24c47b23eb.png")
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.AutoPopDelay = 60000
+        Me.ToolTip1.InitialDelay = 1
+        Me.ToolTip1.ReshowDelay = 100
         '
         'Page_Initial
         '
@@ -1286,16 +1286,6 @@ Partial Class Page_Initial
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage_Tchat.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox1.ResumeLayout(False)
-        Me.TabPage_Caractéristique.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.TabPage_Sort.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.TabPage_Inventaire.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
-        Me.TabControl2.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage13.ResumeLayout(False)
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1304,11 +1294,17 @@ Partial Class Page_Initial
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage_Caractéristique.ResumeLayout(False)
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.TabPage_Sort.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage_Inventaire.ResumeLayout(False)
         CType(Me.PictureBox_Dofus_5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_Dofus_6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_Dofus_3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1326,7 +1322,11 @@ Partial Class Page_Initial
         CType(Me.PictureBox_Bouclier, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_Amulette, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.TabControl2.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
         CType(Me.PictureBox_Inventaire_Affiche_Caractéristique, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage13.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

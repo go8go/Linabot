@@ -2,8 +2,6 @@
 
 #Region "Affiche Caractéristique"
 
-     'Lucifer ma fait très mal au cul OUIN
-                            QUEL MONSTRE
     Public Sub Caractéristiques_Joueur(ByVal Index As Integer, ByVal Information As String)
 
         With Comptes(Index)._User

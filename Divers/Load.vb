@@ -8,7 +8,8 @@ Module Load
 
     Public Dico_Personnage As New Dictionary(Of Integer, String())
     Public Dico_Serveur As New Dictionary(Of String, String())
-
+    Public Liste_Des_Objets As New Dictionary(Of Integer, String())
+    Public Liste_Des_Mobs As New Dictionary(Of Integer, Dictionary(Of Integer, String()))
 
 
     Public Sub Load_Information_Serveur()
@@ -64,8 +65,77 @@ Module Load
     End Sub
 
 
+    Public Sub LoadItems()
 
+        Try
 
+            Liste_Des_Objets.Clear()
 
+            Dim monStreamReader As New StreamReader("Data/Objets.txt")
+
+            Do Until monStreamReader.EndOfStream
+
+                Dim Ligne As String = monStreamReader.ReadLine
+
+                If Ligne <> "" Then
+
+                    Dim Separation() As String = Split(Ligne, "|")
+
+                    Liste_Des_Objets.Add(Separation(0), Separation) 'ID | ID - Nom - Catégorie - Pods
+
+                End If
+            Loop
+
+            monStreamReader.Close()
+
+        Catch ex As Exception
+
+            Erreur_Fichier(0, "LoadItems", ex.Message)
+
+        End Try
+
+    End Sub
+
+    Public Sub LoadMobs()
+        Try
+            Liste_Des_Mobs.Clear()
+            Dim monStreamReader As New StreamReader("Data/Mobs.txt")
+            Do Until monStreamReader.EndOfStream
+
+                Dim Ligne As String = monStreamReader.ReadLine
+
+                If Ligne <> "" Then
+                    'Je split les informations du mob.
+                    Dim Separation() As String = Split(Ligne, "|")
+                    Dim ID_Mobs As Integer = Separation(0)
+                    Dim Name_Mobs As String = Separation(1)
+
+                    For i = 2 To Separation.Count - 1
+                        'Je split les informations du mobs (résistance, etc...)
+                        Dim Separation_Info() As String = Split(Separation(i), ":")
+
+                        If Liste_Des_Mobs.ContainsKey(ID_Mobs) Then
+                            'Je split les informations du mob.
+                            'ID | Level | Name - Niveau - Rés Neutre - Rés Terre - Rés Feu - Rés Eau - Rés Air - Esquive PA - Esquive PM
+                            Liste_Des_Mobs(ID_Mobs).Add(i - 2,
+                            {Name_Mobs, Separation_Info(3), Separation_Info(4), Separation_Info(5), Separation_Info(6), Separation_Info(7), Separation_Info(8), Separation_Info(9)})
+                        Else
+                            'Si la dictionnary contient déjà l'ID du mob, alors j'ajoute seulement le lv et les informations du mob.
+                            'ID | Level | Name - Niveau - Rés Neutre - Rés Terre - Rés Feu - Rés Eau - Rés Air - Esquive PA - Esquive PM
+                            Liste_Des_Mobs.Add(ID_Mobs, New Dictionary(Of Integer, String()) From
+                                               {
+                                               {i - 2,
+                           {Name_Mobs, Separation_Info(1), Separation_Info(3), Separation_Info(4), Separation_Info(5), Separation_Info(6), Separation_Info(7), Separation_Info(8), Separation_Info(9)}}})
+                        End If
+                    Next
+
+                End If
+            Loop
+
+            monStreamReader.Close()
+        Catch ex As Exception
+            ' Erreur_Fichier(0, "LoadMobs", ex.Message)
+        End Try
+    End Sub
 
 End Module
